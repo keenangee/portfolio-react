@@ -1,6 +1,9 @@
 const Welcome = () => {
   return (
-    <section id="welcome" className="min-h-screen">
+    <section
+      id="welcome"
+      className="min-h-screen flex content-center items-center"
+    >
       <div className=" text-left mx-5 md:mx-[15vw] mt-[20vh]">
         <p className="text-primary leading-normal text-[20px] pb-4">
           Hi, my name is

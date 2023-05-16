@@ -20,19 +20,19 @@ const Nav = () => {
       <nav className="hidden md:flex">
         <ul className="flex row gap-3">
           <li>
-            <a href="/">Home</a>
+            <a href="#welcome">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#Projects">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#Games">Games</a>
+            <a href="#games">Games</a>
           </li>
           <li>
-            <a href="#Contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -57,19 +57,19 @@ const Nav = () => {
         <nav className="">
           <ul className="underline underline-offset-8 h-screen items-center flex flex-col justify-around text-[1.5rem]">
             <li>
-              <a href="/">Home</a>
+              <a href="#welcome">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#Projects">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#Games">Games</a>
+              <a href="#games">Games</a>
             </li>
             <li>
-              <a href="#Contact">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li></li>
           </ul>
