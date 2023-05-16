@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #201a44;
+  color: #f2cfff;
+  font-family: "Rubik 80s Fade", sans-serif;
+}
+
+a {
+  color: #ce4bff;
+}
