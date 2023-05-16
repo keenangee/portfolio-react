@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Welcome from "./components/Welcome";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <Nav />
