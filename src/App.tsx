@@ -16,8 +16,6 @@ const App: React.FC = () => {
       <ProjectsPicker />
       {/* <GamesPicker /> */}
       <Contact />
-
-      <Footer />
     </>
   );
 };

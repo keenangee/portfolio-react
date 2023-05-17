@@ -6,7 +6,7 @@ const About: React.FC = () => {
     >
       <div className="sm:max-w-[45vw]">
         <img
-          src="/me.jpeg"
+          src="/me.JPG"
           alt="Keenan and 2 others"
           className="max-w-[65vw] sm:max-w-[45vw] md:max-w-[30vw] rounded-2xl"
         />
