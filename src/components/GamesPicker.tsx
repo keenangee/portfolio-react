@@ -1,4 +1,4 @@
-const GamesPicker = () => {
+const GamesPicker: React.FC = () => {
   return (
     <section
       id="games"

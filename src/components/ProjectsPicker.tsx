@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Projects from "./Projects";
 
-const ProjectsPicker = () => {
+const ProjectsPicker: React.FC = () => {
   const [project, setProject] = useState<string>("NC Newz");
 
   return (

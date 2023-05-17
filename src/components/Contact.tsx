@@ -6,7 +6,7 @@ const styles: CSSProperties = {
   width: "6rem",
 };
 
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <section
       id="contact"

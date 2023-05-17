@@ -1,4 +1,4 @@
-const Welcome = () => {
+const Welcome: React.FC = () => {
   return (
     <section
       id="welcome"

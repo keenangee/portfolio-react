@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineCloseCircle, AiOutlineMenu } from "react-icons/ai";
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleOpen = () => {
