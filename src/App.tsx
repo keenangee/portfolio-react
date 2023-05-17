@@ -14,7 +14,7 @@ const App: React.FC = () => {
       <Welcome />
       <About />
       <ProjectsPicker />
-      <GamesPicker />
+      {/* <GamesPicker /> */}
       <Contact />
 
       <Footer />

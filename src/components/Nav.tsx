@@ -13,7 +13,7 @@ const Nav = () => {
       className={
         isOpen
           ? "top-0 fixed w-screen flex row justify-between p-5"
-          : "top-0 fixed w-screen flex row justify-between p-5 bg-darkest"
+          : "top-0 fixed w-screen flex row justify-between p-5 bg-darkest z-10"
       }
     >
       <h1 className="text-3xl">{!isOpen ? "KG" : ""}</h1>
@@ -28,9 +28,9 @@ const Nav = () => {
           <li>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#games">Games</a>
-          </li>
+          </li> */}
           <li>
             <a href="#contact">Contact</a>
           </li>

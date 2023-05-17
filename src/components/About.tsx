@@ -2,20 +2,23 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex col flex-wrap justify-center gap-4 content-center"
+      className="min-h-screen flex flex-col md:flex-row sm:flex-row items-center justify-center gap-6 px-10"
     >
-      <div className="max-w-[45vw]">
+      <div className="sm:max-w-[45vw]">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ223PvEtvdBXCzrmD0npI4d5kUAWR5abxhHQ&usqp=CAU"
-          alt=""
+          src="/me.jpeg"
+          alt="Keenan and 2 others"
+          className="max-w-[65vw] sm:max-w-[45vw] md:max-w-[30vw] rounded-2xl"
         />
       </div>
-      <div className="max-w-[45vw]">
-        <p className="text-primary leading-normal text-[20px] pb-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
-          quasi suscipit reprehenderit eius explicabo quidem! Fuga eius porro
-          doloribus fugit tempora, unde praesentium, quis suscipit non
-          dignissimos accusantium iusto repudiandae.
+      <div className="sm:max-w-[45vw]">
+        <p className="text-lightest leading-normal pb-4">
+          I am driven to develop efficient solutions to complex problems, with a
+          sharp eye for detail. I take pride in my code and enjoy fast-paced
+          collaborative settings, and I’m happy to take on new challenges to
+          expand my skills and knowledge as a developer. I am eager to
+          collaborate with a team of like-minded individuals who share my
+          passion to solve complex problems and create innovative solutions.
         </p>
       </div>
     </section>
