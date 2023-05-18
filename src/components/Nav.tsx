@@ -44,10 +44,12 @@ const Nav: React.FC = () => {
         {!isOpen ? (
           <AiOutlineMenu size={40} className=" cursor-pointer" />
         ) : (
-          <AiOutlineCloseCircle
-            size={40}
-            className=" cursor-pointer fixed top-5 right-5"
-          />
+          <>
+            <AiOutlineCloseCircle
+              size={40}
+              className=" cursor-pointer fixed top-5 right-5"
+            />
+          </>
         )}
       </div>
       <div
@@ -58,9 +60,14 @@ const Nav: React.FC = () => {
         }
       >
         {/* <h1 className="text-3xl p-5">KG</h1> */}
-        <img src="/kg.png" alt="KG" className="w-10 h-10 p-5" />
+
         <nav className="">
           <ul className="underline underline-offset-8 h-screen items-center flex flex-col justify-around text-[1.5rem]">
+            <img
+              src="/kg.png"
+              alt="KG"
+              className="w-12 h-12 left-24 top-5 ease-in"
+            />
             <li>
               <a href="#welcome" onClick={() => setIsOpen(false)}>
                 Home
