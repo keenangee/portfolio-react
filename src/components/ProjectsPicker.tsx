@@ -50,7 +50,7 @@ const ProjectsPicker: React.FC = () => {
           </button>
         </li>
       </ul>
-      <div className="flex w-full md:w-[60vw] h-[30rem] md:h-auto md:py-4 bg-primary rounded-lg">
+      <div className="flex w-full md:w-[60vw] h-[30rem] md:h-[27rem] md:py-4 bg-primary rounded-lg">
         <Projects project={project} />
       </div>
     </section>
