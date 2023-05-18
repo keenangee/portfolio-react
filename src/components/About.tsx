@@ -9,7 +9,7 @@ const About: React.FC = () => {
           <img
             src="/me.JPG"
             alt="Keenan and 2 others"
-            className="max-w-[65vw] sm:max-w-[45vw] md:max-w-[30vw] rounded-2xl"
+            className="max-w-[65vw] sm:max-w-[45vw] md:max-w-[20vw] rounded-2xl"
           />
         </div>
         <div className="sm:max-w-[45vw]">
