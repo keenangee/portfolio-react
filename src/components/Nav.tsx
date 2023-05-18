@@ -16,8 +16,9 @@ const Nav: React.FC = () => {
           : "top-0 fixed w-screen flex row justify-between p-5 bg-darkest z-10"
       }
     >
-      <h1 className="text-3xl">{!isOpen ? "KG" : ""}</h1>
-      <nav className="hidden md:flex">
+      {!isOpen ? <img src="/kg.png" alt="KG" className="w-15 h-14" /> : null}
+      {/* <h1 className="text-3xl">{!isOpen ? "KG" : ""}</h1> */}
+      <nav className="hidden md:flex text-xl items-center">
         <ul className="flex row gap-3">
           <li>
             <a href="#welcome">Home</a>
@@ -36,7 +37,10 @@ const Nav: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <div className="z-10 block md:hidden" onClick={handleOpen}>
+      <div
+        className="z-10 block md:hidden items-center text-white"
+        onClick={handleOpen}
+      >
         {!isOpen ? (
           <AiOutlineMenu size={40} className=" cursor-pointer" />
         ) : (
@@ -53,7 +57,8 @@ const Nav: React.FC = () => {
             : "fixed right-[-100%] top-0 w-[85%] h-full border-l border-l-dark bg-light ease-in-out duration-300"
         }
       >
-        <h1 className="text-3xl p-5">KG</h1>
+        {/* <h1 className="text-3xl p-5">KG</h1> */}
+        <img src="/kg.png" alt="KG" className="w-10 h-10 p-5" />
         <nav className="">
           <ul className="underline underline-offset-8 h-screen items-center flex flex-col justify-around text-[1.5rem]">
             <li>
