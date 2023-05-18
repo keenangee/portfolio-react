@@ -13,7 +13,7 @@ const About: React.FC = () => {
           />
         </div>
         <div className="sm:max-w-[45vw]">
-          <p className="text-lightest leading-normal pb-4">
+          <p className="text-lightest leading-normal pb-4 text-md md:text-lg">
             I am driven to develop efficient solutions to complex problems, with
             a sharp eye for detail. I take pride in my code and enjoy fast-paced
             collaborative settings, and I’m happy to take on new challenges to

@@ -4,7 +4,7 @@ interface ProjectsProp {
 
 const Projects: React.FC<ProjectsProp> = ({ project }) => {
   return (
-    <div className="m-auto h-[95%] w-[95%] bg-lightest border-2 border-dark drop-shadow-md pb-3">
+    <div className="m-auto h-[95%] w-[95%] bg-lightest border-2 border-dark drop-shadow-md pb-3 text-md md:text-lg">
       <h1 className=" text-darkest text-center py-2 text-[1.3rem]">
         {project}
       </h1>
@@ -15,7 +15,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             alt="NC Newz"
             className="px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2"
           />
-          <p className="text-darkest text-left text-sm px-3">
+          <p className="text-darkest text-left px-3">
             This project is a news app that I built to ustilise a news api that
             I developed. This app is built with React and uses Tailwind CSS for
             styling. The app is hosted on Netlify and the api is hosted on
@@ -41,7 +41,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             alt="NC Newz"
             className="px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2"
           />
-          <p className="text-darkest text-left text-sm px-3">
+          <p className="text-darkest text-left px-3">
             This project is an anime quote app that I built to ustilise an anime
             quote api found online. This app is built with React, and can
             generate anime quotes at random, or by the search feature. The app
@@ -68,7 +68,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             className="px-3 mx-auto h-[14rem] sm:h-max max-w-[10rem] object-cover rounded-md pb-4"
           />
           <div className="flex justify-center items-center">
-            <p className="text-darkest text-left text-sm px-3">
+            <p className="text-darkest text-left px-3">
               This project is a parking finder app, it was built in a team of 5,
               and uses React Native Expo for the front end, and optimises
               firebase for the backend processes.
