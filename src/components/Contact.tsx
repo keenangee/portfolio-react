@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
     <>
       <section
         id="contact"
-        className="min-h-screen flex justify-center items-center"
+        className="min-h-[95vh] flex justify-center items-center"
       >
         <div className="flex flex-col gap-6 md:flex-row justify-between bg-white rounded-full">
           <SocialIcon

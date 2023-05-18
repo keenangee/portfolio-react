@@ -12,7 +12,7 @@ const Nav: React.FC = () => {
     <div
       className={
         isOpen
-          ? "top-0 fixed w-screen flex row justify-between p-5"
+          ? "top-0 fixed w-screen flex row justify-between p-5 z-20"
           : "top-0 fixed w-screen flex row justify-between p-5 bg-darkest z-10"
       }
     >
@@ -57,19 +57,29 @@ const Nav: React.FC = () => {
         <nav className="">
           <ul className="underline underline-offset-8 h-screen items-center flex flex-col justify-around text-[1.5rem]">
             <li>
-              <a href="#welcome">Home</a>
+              <a href="#welcome" onClick={() => setIsOpen(false)}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" onClick={() => setIsOpen(false)}>
+                About
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={() => setIsOpen(false)}>
+                Projects
+              </a>
             </li>
+            {/* <li>
+              <a href="#games" onClick={() => setIsOpen(false)}>
+                Games
+              </a>
+            </li> */}
             <li>
-              <a href="#games">Games</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={() => setIsOpen(false)}>
+                Contact
+              </a>
             </li>
             <li></li>
           </ul>
