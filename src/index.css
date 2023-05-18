@@ -19,3 +19,17 @@ a {
 #welcome {
   font-family: "Rubik 80s Fade", sans-serif;
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 1.5s ease-in forwards;
+}
