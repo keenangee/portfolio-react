@@ -14,6 +14,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             src="/nc-newz.png"
             alt="NC Newz"
             className="px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2"
+            loading="lazy"
           />
           <p className="text-darkest text-left px-3">
             This project is a news app that I built to ustilise a news api that
@@ -40,6 +41,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             src="/anime-app.png"
             alt="NC Newz"
             className="px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2"
+            loading="lazy"
           />
           <p className="text-darkest text-left px-3">
             This project is an anime quote app that I built to ustilise an anime
@@ -66,6 +68,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             src="/parkfind.png"
             alt="NC Newz"
             className="px-3 mx-auto h-[14rem] sm:h-max max-w-[10rem] object-cover rounded-md pb-4"
+            loading="lazy"
           />
           <div className="flex justify-center items-center">
             <p className="text-darkest text-left px-3">
