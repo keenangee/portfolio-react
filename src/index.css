@@ -34,7 +34,7 @@ a:hover {
 
 .fade-in-section {
   opacity: 0;
-  transition: opacity 2s ease-in-out; /* Adjust the transition duration as needed */
+  transition: opacity 1.5s ease-in-out; /* Adjust the transition duration as needed */
 }
 
 .fade-in-section.fade-in {
