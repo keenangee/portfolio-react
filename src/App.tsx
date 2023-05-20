@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import ProjectsPicker from "./components/ProjectsPicker";
 import Welcome from "./components/Welcome";
 import { useEffect, useRef } from "react";
+import LoadingScreen from "./components/LoadingScreen";
 
 const App: React.FC = () => {
   const sectionRefs = useRef<Array<HTMLElement | null>>([]);
@@ -31,6 +32,7 @@ const App: React.FC = () => {
 
   return (
     <>
+      <LoadingScreen />
       <Nav />
       <Welcome />
       <section
