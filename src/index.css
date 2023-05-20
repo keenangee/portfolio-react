@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-size: 16px; /* Default font size for larger screens */
+  --font-size-mobile: 14px; /* Font size for mobile screens */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,27 +14,29 @@ html {
 body {
   background-color: #201a44;
   color: #f2cfff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Rubik 80s Fade", sans-serif;
+  font-size: var(--font-size);
+}
+@media (max-width: 767px) {
+  body {
+    font-family: "Black Ops One", sans-serif;
+    font-size: var(--font-size-mobile);
+  }
 }
 
 a {
   color: #ce4bff;
 }
 
-#welcome {
-  font-family: "Rubik 80s Fade", sans-serif;
+a:hover {
+  color: #f2cfff;
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
+.fade-in-section {
   opacity: 0;
-  animation: fade-in 1.5s ease-in forwards;
+  transition: opacity 2s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.fade-in-section.fade-in {
+  opacity: 1;
 }

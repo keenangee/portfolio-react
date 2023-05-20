@@ -4,7 +4,7 @@ interface ProjectsProp {
 
 const Projects: React.FC<ProjectsProp> = ({ project }) => {
   return (
-    <div className="m-auto h-[95%] w-[95%] bg-lightest border-2 border-dark drop-shadow-md pb-3 text-md md:text-lg">
+    <div className="m-auto h-[95%] md:h-[100%] w-[95%] bg-lightest border-2 border-dark drop-shadow-md pb-3 text-sm lg:text-lg">
       <h1 className=" text-darkest text-center py-2 text-[1.3rem]">
         {project}
       </h1>

@@ -1,4 +1,3 @@
-import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
 // import GamesPicker from "./components/GamesPicker";
@@ -17,7 +16,7 @@ const App: React.FC = () => {
           const sectionTop = section.getBoundingClientRect().top;
           const windowHeight = window.innerHeight;
 
-          if (sectionTop < windowHeight * 0.8) {
+          if (sectionTop < windowHeight * 1) {
             section.classList.add("fade-in");
           }
         }
@@ -34,13 +33,22 @@ const App: React.FC = () => {
     <>
       <Nav />
       <Welcome />
-      <section ref={(el) => sectionRefs.current.push(el)} className="h-screen">
+      <section
+        ref={(el) => sectionRefs.current.push(el)}
+        className="h-screen fade-in-section"
+      >
         <About />
       </section>
-      <section ref={(el) => sectionRefs.current.push(el)} className="h-screen">
+      <section
+        ref={(el) => sectionRefs.current.push(el)}
+        className="h-screen fade-in-section"
+      >
         <ProjectsPicker />
       </section>
-      <section ref={(el) => sectionRefs.current.push(el)} className="h-screen">
+      <section
+        ref={(el) => sectionRefs.current.push(el)}
+        className="h-screen fade-in-section"
+      >
         {/* <GamesPicker /> */}
         <Contact />
       </section>

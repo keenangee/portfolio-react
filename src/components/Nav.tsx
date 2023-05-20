@@ -61,7 +61,7 @@ const Nav: React.FC = () => {
       >
         {/* <h1 className="text-3xl p-5">KG</h1> */}
 
-        <nav className="">
+        <nav>
           <ul className="underline underline-offset-8 h-screen items-center flex flex-col justify-around text-[1.5rem]">
             <img
               src="/kg.png"
