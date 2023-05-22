@@ -7,7 +7,7 @@ const ProjectsPicker: React.FC = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col md:flex-row content-center items-center justify-center px-6"
+      className="min-h-screen flex flex-col md:flex-row content-center items-center justify-center px-6 pt-[10vh]"
     >
       <ul className="flex flex-row md:flex-col gap-4 mb-[-4px] md:mb-0 md:mr-[-3px]">
         <li>

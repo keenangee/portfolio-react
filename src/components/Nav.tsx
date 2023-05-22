@@ -16,7 +16,11 @@ const Nav: React.FC = () => {
           : "top-0 fixed w-screen flex row justify-between p-5 bg-darkest z-10"
       }
     >
-      {!isOpen ? <img src="/kg.png" alt="KG" className="w-15 h-14" /> : null}
+      {!isOpen ? (
+        <a href="/">
+          <img src="/kg.png" alt="KG" className="w-15 h-14" />
+        </a>
+      ) : null}
       {/* <h1 className="text-3xl">{!isOpen ? "KG" : ""}</h1> */}
       <nav className="hidden md:flex text-xl items-center">
         <ul className="flex row gap-3">

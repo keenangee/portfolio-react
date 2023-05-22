@@ -1,6 +1,6 @@
 const Footer: React.FC = () => {
   return (
-    <footer className="text-center bottom-0 mt-auto pb-5">
+    <footer className="text-center bottom-0 mt-auto pb-5 px-2">
       <p>
         Made with <a href="https://react.dev/">React</a>,
         <a href="https://www.typescriptlang.org/"> TypeScript</a>, and

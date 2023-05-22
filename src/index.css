@@ -29,12 +29,12 @@ a {
 }
 
 a:hover {
-  color: #f2cfff;
+  color: #a27ac4;
 }
 
 .fade-in-section {
   opacity: 0;
-  transition: opacity 1.5s ease-in-out; /* Adjust the transition duration as needed */
+  transition: opacity 2.5s ease-in-out; /* Adjust the transition duration as needed */
 }
 
 .fade-in-section.fade-in {
