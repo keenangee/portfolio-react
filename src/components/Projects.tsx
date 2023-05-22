@@ -49,8 +49,8 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
       <div
         className={
           project !== "ParkFind&Remind"
-            ? "flex flex-col lg:flex-row lg:pt-[2rem] gap-4 md:gap-0"
-            : "flex flex-col md:flex-row lg:pt-[2rem] gap-4 md:gap-0 pt-0 sm:pt-4"
+            ? "flex flex-col lg:flex-row lg:pt-[2rem] gap-4 md:gap-0 transition-all duration-200"
+            : "flex flex-col md:flex-row lg:pt-[2rem] gap-4 md:gap-0 pt-0 sm:pt-4 transition-all duration-200"
         }
       >
         <img
@@ -58,8 +58,8 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
           alt={currentProject.name}
           className={
             project !== "ParkFind&Remind"
-              ? "px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2"
-              : "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] object-cover rounded-md pb-2"
+              ? "px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2 transition-all duration-200"
+              : "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] object-cover rounded-md pb-2 transition-all duration-200"
           }
           loading="lazy"
         />
