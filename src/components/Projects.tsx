@@ -15,7 +15,7 @@ const project1 = {
 const project2 = {
   name: "Anime Quotes",
   description:
-    "This project is an anime quote app that I built to ustilise an anime quote api found online. This app is built with React, and can generate anime quotes at random, or by the search feature. The app is hosted on Cloudflare.",
+    "This project is an anime quote app that I built to ustilise an anime quote api found online. This app is built using Next.js in React, and can generate anime quotes at random, or by the search feature. The app is hosted on Netlify.",
   link: "https://anime-quote-app.pages.dev/",
   image: "/anime-app.png",
 };
