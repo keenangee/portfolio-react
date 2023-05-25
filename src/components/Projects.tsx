@@ -61,7 +61,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
               ? "px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2 transition-all duration-200"
               : "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] object-cover rounded-md pb-2 transition-all duration-200"
           }
-          loading="lazy"
+          // loading="lazy"
         />
         <p className="text-darkest text-left px-3">
           {currentProject.description}
