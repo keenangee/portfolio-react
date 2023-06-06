@@ -28,6 +28,14 @@ const project3 = {
   image: "/parkfind.png",
 };
 
+const project4 = {
+  name: "Wite Label E-Commerce",
+  description:
+    "This is a white label e-commerce app that I built using React Native. For this I wanted to focus and practice on 2 main things: 1. Bottom tab navigation, and 2. Automated 'FlatList' carousels",
+  link: "https://github.com/keenangee/white-label-ecom",
+  image: "/white-label-ecom.png",
+};
+
 const Projects: React.FC<ProjectsProp> = ({ project }) => {
   const [currentProject, setCurrentProject] = useState(project1);
 
@@ -38,6 +46,8 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
       setCurrentProject(project2);
     } else if (project === "ParkFind&Remind") {
       setCurrentProject(project3);
+    } else if (project === "White Label E-Commerce") {
+      setCurrentProject(project4);
     }
   }, [project]);
 
@@ -48,7 +58,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
       </h1>
       <div
         className={
-          project !== "ParkFind&Remind"
+          project !== "ParkFind&Remind" && project !== "White Label E-Commerce"
             ? "flex flex-col lg:flex-row lg:pt-[2rem] gap-4 md:gap-0 transition-all duration-200"
             : "flex flex-col md:flex-row lg:pt-[2rem] gap-4 md:gap-0 pt-0 sm:pt-4 transition-all duration-200"
         }
@@ -57,13 +67,14 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
           src={currentProject.image}
           alt={currentProject.name}
           className={
-            project !== "ParkFind&Remind"
-              ? "px-3 mx-auto max-h-[14rem] object-cover rounded-md pb-2 transition-all duration-200"
-              : "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] object-cover rounded-md pb-2 transition-all duration-200"
+            project !== "ParkFind&Remind" &&
+            project !== "White Label E-Commerce"
+              ? "px-3 mx-auto max-h-[14rem] pb-2 transition-all duration-200"
+              : "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] pb-2 transition-all duration-200"
           }
           // loading="lazy"
         />
-        <p className="text-darkest text-left px-3">
+        <p className="text-darkest text-left px-3 text-[80%] sm:text-[100%]">
           {currentProject.description}
           <br />
           <br />

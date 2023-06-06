@@ -49,6 +49,19 @@ const ProjectsPicker: React.FC = () => {
             <span className="md:hidden">3</span>
           </button>
         </li>
+        <li>
+          <button
+            className={
+              project === "White Label E-Commerce"
+                ? "bg-primary text-lightest rounded-md px-4 py-2 min-w-full"
+                : "bg-lightest text-primary rounded-md px-4 py-2 min-w-full"
+            }
+            onClick={() => setProject("White Label E-Commerce")}
+          >
+            <span className="hidden md:block">White Label E-Commerce</span>
+            <span className="md:hidden">4</span>
+          </button>
+        </li>
       </ul>
       <div className="flex w-full md:w-[60vw] h-[30rem] md:h-[27rem] md:py-3 lg:py-5 bg-primary rounded-lg">
         <Projects project={project} />
