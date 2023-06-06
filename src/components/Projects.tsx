@@ -38,6 +38,33 @@ const project4 = {
 
 const Projects: React.FC<ProjectsProp> = ({ project }) => {
   const [currentProject, setCurrentProject] = useState(project1);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const preloadImages = async () => {
+      const imagePromises = [
+        project1.image,
+        project2.image,
+        project3.image,
+        project4.image,
+      ].map((src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+
+      try {
+        await Promise.all(imagePromises);
+        setImageLoaded(true);
+      } catch (error) {
+        console.error("Failed to load images:", error);
+      }
+    };
+    preloadImages();
+  }, []);
 
   useEffect(() => {
     if (project === "NC Newz") {
