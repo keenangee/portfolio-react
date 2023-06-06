@@ -38,33 +38,6 @@ const project4 = {
 
 const Projects: React.FC<ProjectsProp> = ({ project }) => {
   const [currentProject, setCurrentProject] = useState(project1);
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const preloadImages = async () => {
-      const imagePromises = [
-        project1.image,
-        project2.image,
-        project3.image,
-        project4.image,
-      ].map((src) => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.src = src;
-          img.onload = resolve;
-          img.onerror = reject;
-        });
-      });
-
-      try {
-        await Promise.all(imagePromises);
-        setImageLoaded(true);
-      } catch (error) {
-        console.error("Failed to load images:", error);
-      }
-    };
-    preloadImages();
-  }, []);
 
   useEffect(() => {
     if (project === "NC Newz") {
@@ -90,7 +63,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             : "flex flex-col md:flex-row lg:pt-[2rem] gap-4 md:gap-0 pt-0 sm:pt-4 transition-all duration-200"
         }
       >
-        <img
+        {/* <img
           src={currentProject.image}
           alt={currentProject.name}
           className={
@@ -99,8 +72,47 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
               ? "px-3 mx-auto max-h-[14rem] pb-2 transition-all duration-200"
               : "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] pb-2 transition-all duration-200"
           }
-          // loading="lazy"
+          loading="lazy"
+        /> */}
+        <img
+          src="/nc-newz.png"
+          alt="NC Newz"
+          className={
+            project === "NC Newz" ? "px-3 mx-auto max-h-[14rem] pb-2" : "hidden"
+          }
+          loading="lazy"
         />
+        <img
+          src="/anime-app.png"
+          alt="Anime Quotes"
+          className={
+            project === "Anime Quotes"
+              ? "px-3 mx-auto max-h-[14rem] pb-2"
+              : "hidden"
+          }
+          loading="lazy"
+        />
+        <img
+          src="/parkfind.png"
+          alt="ParkFind&Remind"
+          className={
+            project === "ParkFind&Remind"
+              ? "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] pb-2"
+              : "hidden"
+          }
+          loading="lazy"
+        />
+        <img
+          src="/white-label-ecom.png"
+          alt="White Label E-Commerce"
+          className={
+            project === "White Label E-Commerce"
+              ? "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] pb-2"
+              : "hidden"
+          }
+          loading="lazy"
+        />
+
         <p className="text-darkest text-left px-3 text-[80%] sm:text-[100%]">
           {currentProject.description}
           <br />
