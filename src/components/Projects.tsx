@@ -59,8 +59,8 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
       <div
         className={
           project !== "ParkFind&Remind" && project !== "White Label E-Commerce"
-            ? "flex flex-col lg:flex-row lg:pt-[2rem] gap-4 md:gap-0 transition-all duration-200"
-            : "flex flex-col md:flex-row lg:pt-[2rem] gap-4 md:gap-0 pt-0 sm:pt-4 transition-all duration-200"
+            ? "flex flex-col lg:flex-row transition-all duration-200 h-full justify-start items-center md:items-start md:pt-4"
+            : "flex flex-col sm:flex-row transition-all duration-200 h-full justify-start items-center md:items-start md:pt-4"
         }
       >
         {/* <img
@@ -115,15 +115,19 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
 
         <p className="text-darkest text-left px-3 text-[80%] sm:text-[100%]">
           {currentProject.description}
-          <br />
-          <br />
-          <span>
-            Link:{" "}
+          <span className="hidden sm:flex gap-1 pt-4 text-darkest text-left text-[80%] sm:text-[100%] justify-left">
+            Link:
             <a href={currentProject.link} rel="noreferrer" target="_blank">
               press here!
             </a>
           </span>
         </p>
+        <span className="pt-2 text-darkest text-left px-3 text-[80%] sm:text-[100%] sm:hidden">
+          Link:{" "}
+          <a href={currentProject.link} rel="noreferrer" target="_blank">
+            press here!
+          </a>
+        </span>
       </div>
     </div>
   );
