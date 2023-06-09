@@ -6,7 +6,7 @@ import ProjectsPicker from "./components/ProjectsPicker";
 import Welcome from "./components/Welcome";
 import { useEffect, useRef } from "react";
 import LoadingScreen from "./components/LoadingScreen";
-import BlogPicker from "./components/BlogPicker";
+// import BlogPicker from "./components/BlogPicker";
 
 const App: React.FC = () => {
   const sectionRefs = useRef<Array<HTMLElement | null>>([]);
