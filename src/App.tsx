@@ -6,6 +6,7 @@ import ProjectsPicker from "./components/ProjectsPicker";
 import Welcome from "./components/Welcome";
 import { useEffect, useRef } from "react";
 import LoadingScreen from "./components/LoadingScreen";
+import BlogPicker from "./components/BlogPicker";
 
 const App: React.FC = () => {
   const sectionRefs = useRef<Array<HTMLElement | null>>([]);
@@ -47,11 +48,17 @@ const App: React.FC = () => {
       >
         <ProjectsPicker />
       </section>
+      {/* <section
+        ref={(el) => sectionRefs.current.push(el)}
+        className="h-screen fade-in-section"
+      >
+        <BlogPicker />
+      </section> */}
+      {/* <GamesPicker /> */}
       <section
         ref={(el) => sectionRefs.current.push(el)}
         className="h-screen fade-in-section"
       >
-        {/* <GamesPicker /> */}
         <Contact />
       </section>
     </>

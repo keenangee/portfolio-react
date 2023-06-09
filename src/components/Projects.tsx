@@ -7,7 +7,7 @@ interface ProjectsProp {
 const project1 = {
   name: "NC Newz",
   description:
-    "This project is a news app that I built to ustilise a news api that I developed. This app is built with React and uses Tailwind CSS for styling. The app is hosted on Netlify and the api is hosted on Render. The api is built using postgreSQL, Express, and Node.js.",
+    "This project encompasses a news application that I developed, leveraging a custom API. The application is constructed using React, accompanied by Tailwind CSS for seamless styling. Hosting-wise, the application is deployed on Netlify, while the API resides on Render. The API implementation incorporates postgreSQL, Express, and Node.js to facilitate robust functionality and efficient data management.",
   link: "https://newz-nc.netlify.app/",
   image: "/nc-newz.png",
 };
@@ -15,7 +15,7 @@ const project1 = {
 const project2 = {
   name: "Anime Quotes",
   description:
-    "This project is an anime quote app that I built to ustilise an anime quote api found online. This app is built using Next.js, and can generate anime quotes at random, or by the search feature. The app is hosted on CloudFlare.",
+    "This project entails the creation of an anime quote app designed to utilize an anime quote API obtained from an online source. Built upon the Next.js framework, the app offers the ability to generate anime quotes at random or through a comprehensive search feature. It is seamlessly hosted on the CloudFlare platform to ensure optimal performance and availability.",
   link: "https://anime-quote-app.pages.dev/",
   image: "/anime-app.png",
 };
@@ -23,7 +23,7 @@ const project2 = {
 const project3 = {
   name: "ParkFind&Remind",
   description:
-    "This project is a parking finder app, it was built in a team of 5, and uses React Native Expo for the front end, and optimises firebase for the backend processes.",
+    "This project involved the development of a sophisticated parking finder application, crafted collaboratively by a team of five. The app harnesses the power of React Native for its robust front-end implementation, while leveraging the capabilities of Firebase to streamline and optimize the backend processes. This app allows users to seamlessly and efficiently locate their parked vehicle.",
   link: "https://github.com/differently-wired/park-finder",
   image: "/parkfind.png",
 };
@@ -31,7 +31,7 @@ const project3 = {
 const project4 = {
   name: "Wite Label E-Commerce",
   description:
-    "This is a white label e-commerce app that I built using React Native. For this I wanted to focus and practice on 2 main things: 1. Bottom tab navigation, and 2. Automated 'FlatList' carousels",
+    "Here I developed a white label e-commerce app using React Native, aiming to enhance my skills and proficiency in various aspects of the framework. Throughout the project, I focused on implementing user-friendly navigation and creating dynamic content displays.",
   link: "https://github.com/keenangee/white-label-ecom",
   image: "/white-label-ecom.png",
 };
@@ -59,8 +59,8 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
       <div
         className={
           project !== "ParkFind&Remind" && project !== "White Label E-Commerce"
-            ? "flex flex-col lg:flex-row transition-all duration-200 h-full justify-start items-center md:items-start md:pt-4"
-            : "flex flex-col sm:flex-row transition-all duration-200 h-full justify-start items-center md:items-start md:pt-4"
+            ? "flex flex-col lg:flex-row transition-all duration-200 h-[95%] xl:h-[91%] justify-around items-center"
+            : "flex flex-col sm:flex-row transition-all duration-200 h-[95%] xl:h-[91%] justify-around items-center"
         }
       >
         {/* <img
@@ -78,7 +78,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
           src="/nc-newz.png"
           alt="NC Newz"
           className={
-            project === "NC Newz" ? "px-3 mx-auto max-h-[14rem] pb-2" : "hidden"
+            project === "NC Newz" ? "px-3 mx-auto max-h-[12rem] pb-2" : "hidden"
           }
           loading="lazy"
         />
@@ -87,7 +87,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
           alt="Anime Quotes"
           className={
             project === "Anime Quotes"
-              ? "px-3 mx-auto max-h-[14rem] pb-2"
+              ? "px-3 mx-auto max-h-[12rem] pb-2"
               : "hidden"
           }
           loading="lazy"
@@ -97,7 +97,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
           alt="ParkFind&Remind"
           className={
             project === "ParkFind&Remind"
-              ? "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] pb-2"
+              ? "px-6 mx-auto max-h-[12rem] sm:max-h-[18rem] pb-2"
               : "hidden"
           }
           loading="lazy"
@@ -107,22 +107,22 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
           alt="White Label E-Commerce"
           className={
             project === "White Label E-Commerce"
-              ? "px-6 mx-auto max-h-[15rem] md:max-h-[18rem] pb-2"
+              ? "px-6 mx-auto max-h-[14rem] sm:max-h-[18rem] pb-2"
               : "hidden"
           }
           loading="lazy"
         />
 
-        <p className="text-darkest text-left px-3 text-[80%] sm:text-[100%]">
+        <p className="text-darkest text-left px-3 text-[80%] sm:text-[90%] lg:text-[100%]">
           {currentProject.description}
-          <span className="hidden sm:flex gap-1 pt-4 text-darkest text-left text-[80%] sm:text-[100%] justify-left">
+          <span className="hidden sm:flex gap-1 pt-2 text-darkest text-left text-[80%] sm:text-[100%] justify-left">
             Link:
             <a href={currentProject.link} rel="noreferrer" target="_blank">
               press here!
             </a>
           </span>
         </p>
-        <span className="pt-2 text-darkest text-left px-3 text-[80%] sm:text-[100%] sm:hidden">
+        <span className=" text-darkest text-left px-3 text-[80%] sm:text-[100%] sm:hidden">
           Link:{" "}
           <a href={currentProject.link} rel="noreferrer" target="_blank">
             press here!
