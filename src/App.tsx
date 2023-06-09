@@ -6,7 +6,10 @@ import ProjectsPicker from "./components/ProjectsPicker";
 import Welcome from "./components/Welcome";
 import { useEffect, useRef } from "react";
 import LoadingScreen from "./components/LoadingScreen";
-// import BlogPicker from "./components/BlogPicker";
+import BlogPicker from "./components/BlogPicker";
+import { Route, Routes } from "react-router-dom";
+import BlogNav from "./components/BlogNav";
+import BlogPost from "./components/BlogPost";
 
 const App: React.FC = () => {
   const sectionRefs = useRef<Array<HTMLElement | null>>([]);
@@ -34,33 +37,51 @@ const App: React.FC = () => {
   return (
     <>
       <LoadingScreen />
-      <Nav />
-      <Welcome />
-      <section
-        ref={(el) => sectionRefs.current.push(el)}
-        className="h-screen fade-in-section"
-      >
-        <About />
-      </section>
-      <section
-        ref={(el) => sectionRefs.current.push(el)}
-        className="h-screen fade-in-section"
-      >
-        <ProjectsPicker />
-      </section>
-      {/* <section
-        ref={(el) => sectionRefs.current.push(el)}
-        className="h-screen fade-in-section"
-      >
-        <BlogPicker />
-      </section> */}
-      {/* <GamesPicker /> */}
-      <section
-        ref={(el) => sectionRefs.current.push(el)}
-        className="h-screen fade-in-section"
-      >
-        <Contact />
-      </section>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Nav />
+              <Welcome />
+              <section
+                ref={(el) => sectionRefs.current.push(el)}
+                className="h-screen fade-in-section"
+              >
+                <About />
+              </section>
+              <section
+                ref={(el) => sectionRefs.current.push(el)}
+                className="h-screen fade-in-section"
+              >
+                <ProjectsPicker />
+              </section>
+              <section
+                ref={(el) => sectionRefs.current.push(el)}
+                className="h-screen fade-in-section"
+              >
+                <BlogPicker />
+              </section>
+              {/* <GamesPicker /> */}
+              <section
+                ref={(el) => sectionRefs.current.push(el)}
+                className="h-screen fade-in-section"
+              >
+                <Contact />
+              </section>
+            </>
+          }
+        />
+        <Route
+          path="/blog/:blog_id"
+          element={
+            <>
+              <BlogNav />
+              <BlogPost />
+            </>
+          }
+        />
+      </Routes>
     </>
   );
 };

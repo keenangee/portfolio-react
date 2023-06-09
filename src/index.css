@@ -40,3 +40,16 @@ a:hover {
 .fade-in-section.fade-in {
   opacity: 1;
 }
+
+.blog_post h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0.5em 0 0.5em 0;
+  color: #a27ac4;
+  text-decoration: underline;
+}
+
+.blog_post p {
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1.2em;
+}

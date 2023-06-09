@@ -33,9 +33,9 @@ const Nav: React.FC = () => {
           <li>
             <a href="#projects">Projects</a>
           </li>
-          {/* <li>
+          <li>
             <a href="#blog">Blog</a>
-          </li> */}
+          </li>
           {/* <li>
             <a href="#games">Games</a>
           </li> */}
@@ -90,11 +90,11 @@ const Nav: React.FC = () => {
                 Projects
               </a>
             </li>
-            {/* <li>
+            <li>
               <a href="#blog" onClick={() => setIsOpen(false)}>
                 Blog
               </a>
-            </li> */}
+            </li>
             {/* <li>
               <a href="#games" onClick={() => setIsOpen(false)}>
                 Games

@@ -5,13 +5,25 @@ export interface BlogData {
   date: string;
 }
 
-const BlogCard = ({ title, date, content }: BlogData) => {
+const BlogCard = ({ id, title, date, content }: BlogData) => {
+  const preview = content.slice(0, 150).replace(/(<([^>]+)>)/gi, "") + "...";
+
   return (
     <div className="p-2 border-8 border-primary rounded-md w-[15rem] sm:w-[20rem] xl:w-[25rem] h-[50vh] bg-lightest transition-all duration-500">
-      <ul className="flex flex-col justify-between h-full w-full">
-        <li className="text-light text-center">{title}</li>
-        <li className="text-light">{content}</li>
-        <li className="text-light text-right">{date}</li>
+      <ul className="flex flex-col justify-between h-full w-full text-light">
+        <li className="flex items-center justify-center text-center text-black h-[30%] border-b-2">
+          <h2 className="text-[1rem] sm:text-[1.2rem]">{title}</h2>
+        </li>
+        <li className=" px-4">{preview}</li>
+        <li className=" flex flex-row items-end">
+          <a
+            href={`/blog/${id}`}
+            className="underline text-[1.2rem] italic flex-1"
+          >
+            Read Full Blog!
+          </a>
+          <span className="text-[0.7rem] sm:text-[0.9rem] ">{date}</span>
+        </li>
       </ul>
     </div>
   );
