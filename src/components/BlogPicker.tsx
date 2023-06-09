@@ -36,7 +36,7 @@ const BlogPicker = () => {
       className="min-h-screen flex flex-col md:flex-row content-center items-center justify-center px-6 pt-[10vh]"
     >
       <div className="flex flex-row items-center justify-center w-[90vw] h-fit">
-        <Carousel responsive={responsive} containerClass={`w-full`}>
+        <Carousel responsive={responsive} containerClass={`w-full z-0`}>
           {blogData.map((blog) => (
             <div
               key={blog.id}

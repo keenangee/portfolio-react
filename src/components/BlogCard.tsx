@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export interface BlogData {
   id: number;
   title: string;
@@ -16,12 +18,12 @@ const BlogCard = ({ id, title, date, content }: BlogData) => {
         </li>
         <li className=" px-4">{preview}</li>
         <li className=" flex flex-row items-end">
-          <a
-            href={`/blog/${id}`}
+          <Link
+            to={`/blog/${id}`}
             className="underline text-[1.2rem] italic flex-1"
           >
             Read Full Blog!
-          </a>
+          </Link>
           <span className="text-[0.7rem] sm:text-[0.9rem] ">{date}</span>
         </li>
       </ul>

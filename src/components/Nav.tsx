@@ -62,8 +62,8 @@ const Nav: React.FC = () => {
       <div
         className={
           isOpen
-            ? "fixed right-0 top-0 w-[85%] h-full border-l border-l-dark bg-light ease-in-out duration-300"
-            : "fixed right-[-100%] top-0 w-[85%] h-full border-l border-l-dark bg-light ease-in-out duration-300"
+            ? "fixed right-0 top-0 w-[85%] h-full border-l border-l-dark bg-dark ease-in-out duration-300"
+            : "fixed right-[-100%] top-0 w-[85%] h-full border-l border-l-dark bg-dark ease-in-out duration-300"
         }
       >
         {/* <h1 className="text-3xl p-5">KG</h1> */}
@@ -76,32 +76,52 @@ const Nav: React.FC = () => {
               className="w-12 h-12 left-24 top-5 ease-in"
             />
             <li>
-              <a href="#welcome" onClick={() => setIsOpen(false)}>
+              <a
+                href="#welcome"
+                className="text-darkest hover:text-primary"
+                onClick={() => setIsOpen(false)}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" onClick={() => setIsOpen(false)}>
+              <a
+                href="#about"
+                className="text-darkest hover:text-primary"
+                onClick={() => setIsOpen(false)}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#projects" onClick={() => setIsOpen(false)}>
+              <a
+                href="#projects"
+                className="text-darkest hover:text-primary"
+                onClick={() => setIsOpen(false)}
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#blog" onClick={() => setIsOpen(false)}>
+              <a
+                href="#blog"
+                className="text-darkest hover:text-primary"
+                onClick={() => setIsOpen(false)}
+              >
                 Blog
               </a>
             </li>
             {/* <li>
-              <a href="#games" onClick={() => setIsOpen(false)}>
+              <a href="#games" className="text-darkest hover:text-primary" onClick={() => setIsOpen(false)}>
                 Games
               </a>
             </li> */}
             <li>
-              <a href="#contact" onClick={() => setIsOpen(false)}>
+              <a
+                href="#contact"
+                className="text-darkest hover:text-primary"
+                onClick={() => setIsOpen(false)}
+              >
                 Contact
               </a>
             </li>

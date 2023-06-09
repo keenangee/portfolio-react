@@ -76,6 +76,7 @@ const App: React.FC = () => {
           path="/blog/:blog_id"
           element={
             <>
+              <LoadingScreen />
               <BlogNav />
               <BlogPost />
             </>
