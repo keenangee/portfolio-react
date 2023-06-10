@@ -17,7 +17,10 @@ const BlogPost = () => {
 
   return (
     <>
-      <div ref={containerRef} className=" px-[10vw] pt-[20vh] pb-[10vh]">
+      <div
+        ref={containerRef}
+        className="px-[5vw] sm:px-[10vw] pt-[20vh] pb-[10vh]"
+      >
         <h1 className="text-3xl text-center pb-10 text-primary">
           {blog?.title}
         </h1>
