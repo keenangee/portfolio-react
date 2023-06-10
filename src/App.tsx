@@ -10,6 +10,7 @@ import BlogPicker from "./components/BlogPicker";
 import { Route, Routes } from "react-router-dom";
 import BlogNav from "./components/BlogNav";
 import BlogPost from "./components/BlogPost";
+import Background from "./components/Background";
 
 const App: React.FC = () => {
   const sectionRefs = useRef<Array<HTMLElement | null>>([]);
@@ -37,6 +38,7 @@ const App: React.FC = () => {
   return (
     <>
       <LoadingScreen />
+
       <Routes>
         <Route
           path="/"
@@ -69,6 +71,7 @@ const App: React.FC = () => {
               >
                 <Contact />
               </section>
+              <Background />
             </>
           }
         />
