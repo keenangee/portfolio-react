@@ -22,8 +22,8 @@ const About: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-6 px-10">
-        <ul className="flex flex-row flex-wrap gap-4 px-10 pt-5 justify-center text-xs sm:text-lg">
+      <div className="flex flex-col items-center justify-center gap-6 px-2 sm:px-10">
+        <ul className="flex flex-row flex-wrap gap-4 pt-5 justify-center text-xs sm:text-lg">
           <li>👉 JavaScript</li>
           <li>👉 TypeScript</li>
           <li>👉 React</li>
@@ -33,7 +33,10 @@ const About: React.FC = () => {
           <li>👉 Node.js</li>
           <li>👉 SQL</li>
         </ul>
-        <p className="text-primary italic leading-normal text-md md:text-xl max-w-[70vw] text-center">
+        <ul className="flex flex-row flex-wrap gap-4 justify-center text-xs sm:text-lg">
+          <li>📚 Currently Learning: AWS 📚</li>
+        </ul>
+        <p className="text-primary italic leading-normal text-md md:text-xl sm:max-w-[70vw] text-center">
           🔥 I'm currently looking for a junior developer role, so if you like
           what you see or would like to know anymore about me, please get in
           touch! 🔥
