@@ -4,7 +4,7 @@ The link to view it is [here](https://keenangee.dev/)
 
 ## Info
 
-I have developed this website utilizing a combination of React, TypeScript, and Tailwind CSS. It serves as my professional portfolio, showcasing my projects and demonstrating my skills in web development. The site features a brief informative section about me, along with convenient contact links to facilitate communication.
+I have developed this website utilising a combination of React, TypeScript, and Tailwind CSS. It serves as my professional portfolio, showcasing my projects and demonstrating my skills in web development. The site features a brief informative section about me, along with convenient contact links to facilitate communication.
 
 ## How to run locally
 
