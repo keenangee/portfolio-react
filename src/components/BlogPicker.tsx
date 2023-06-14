@@ -37,20 +37,22 @@ const BlogPicker = () => {
     >
       <div className="flex flex-row items-center justify-center w-[90vw] h-fit">
         <Carousel responsive={responsive} containerClass={`w-full z-0`}>
-          {blogData.map((blog) => (
-            <div
-              key={blog.id}
-              className="flex flex-col items-center justify-center"
-            >
-              <BlogCard
+          {blogData
+            .sort((a, b) => b.id - a.id)
+            .map((blog) => (
+              <div
                 key={blog.id}
-                id={blog.id}
-                title={blog.title}
-                content={blog.content}
-                date={blog.date}
-              />
-            </div>
-          ))}
+                className="flex flex-col items-center justify-center"
+              >
+                <BlogCard
+                  key={blog.id}
+                  id={blog.id}
+                  title={blog.title}
+                  content={blog.content}
+                  date={blog.date}
+                />
+              </div>
+            ))}
         </Carousel>
       </div>
     </section>
