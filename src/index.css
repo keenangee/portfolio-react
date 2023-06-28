@@ -54,3 +54,11 @@ a:hover {
   font-family: "Times New Roman", Times, serif;
   color: white;
 }
+
+.blog_sub {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0.5em 0 0.5em 0;
+  color: #ffffff;
+  text-decoration: underline;
+}
