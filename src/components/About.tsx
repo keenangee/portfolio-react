@@ -23,19 +23,22 @@ const About: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-6 px-2 sm:px-10">
-        <ul className="flex flex-row flex-wrap gap-4 pt-5 justify-center text-xs sm:text-lg">
+        <ul className="flex flex-row flex-wrap gap-1 sm:gap-4 pt-2 sm:pt-5 justify-center text-xs sm:text-lg">
           <li>👉 JavaScript</li>
           <li>👉 TypeScript</li>
+          <li>👉 Next</li>
           <li>👉 React</li>
+          <li>👉 React Native</li>
           <li>👉 HTML</li>
           <li>👉 CSS</li>
           <li>👉 Tailwind</li>
           <li>👉 Node.js</li>
           <li>👉 SQL</li>
+          <li>👉 AWS Cloud Practitioner</li>
         </ul>
-        <ul className="flex flex-row flex-wrap gap-4 justify-center text-xs sm:text-lg">
-          <li>📚 Currently Learning: AWS 📚</li>
-        </ul>
+        {/* <ul className="flex flex-row flex-wrap gap-4 justify-center text-xs sm:text-lg">
+          <li>📚 Learning goes here 📚</li>
+        </ul> */}
         <p className="text-primary italic leading-normal text-md md:text-xl sm:max-w-[70vw] text-center">
           🔥 I'm currently looking for a junior developer role, so if you like
           what you see or would like to know anymore about me, please get in
