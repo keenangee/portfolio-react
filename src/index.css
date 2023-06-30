@@ -5,6 +5,7 @@
 :root {
   --font-size: 16px; /* Default font size for larger screens */
   --font-size-mobile: 14px; /* Font size for mobile screens */
+  --font-size-mobile-small: 10px; /* Font size for mobile screens */
 }
 
 html {
@@ -22,6 +23,11 @@ body {
     font-size: var(--font-size-mobile);
   }
 }
+@media (max-height: 400px) {
+  body {
+    font-size: var(--font-size-mobile-small);
+  }
+}
 
 a {
   color: #ce4bff;
@@ -34,6 +40,14 @@ a:hover {
 .fade-in-section {
   opacity: 0;
   transition: opacity 2s ease-in-out; /* Adjust the transition duration as needed */
+}
+@media (max-height: 400px) {
+  .fade-in-section {
+    height: auto;
+    min-height: 100vh; /* Adjust this value as needed */
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Adjust the transition duration as needed */
+  }
 }
 
 .fade-in-section.fade-in {
