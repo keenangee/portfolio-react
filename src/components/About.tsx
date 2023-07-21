@@ -22,7 +22,7 @@ const About: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-6 px-2 sm:px-10">
+      <div className="flex flex-col items-center justify-center gap-6 px-2 sm:px-20">
         <ul className="flex flex-row flex-wrap gap-1 sm:gap-4 pt-2 sm:pt-5 justify-center text-xs sm:text-lg">
           <li>👉 JavaScript</li>
           <li>👉 TypeScript</li>
@@ -39,11 +39,11 @@ const About: React.FC = () => {
         {/* <ul className="flex flex-row flex-wrap gap-4 justify-center text-xs sm:text-lg">
           <li>📚 Learning goes here 📚</li>
         </ul> */}
-        <p className="text-primary italic leading-normal text-md md:text-xl sm:max-w-[70vw] text-center">
+        {/* <p className="text-primary italic leading-normal text-md md:text-xl sm:max-w-[70vw] text-center">
           🔥 I'm currently looking for a junior developer role, so if you like
           what you see or would like to know anymore about me, please get in
           touch! 🔥
-        </p>
+        </p> */}
       </div>
     </section>
   );
