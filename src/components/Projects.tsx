@@ -63,7 +63,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
             : "flex flex-col sm:flex-row transition-all duration-200 h-[95%] xl:h-[91%] justify-around items-center"
         }
       >
-        <img
+        {/* <img
           src={currentProject.image}
           alt={currentProject.name}
           className={
@@ -75,8 +75,8 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
               : "px-6 mx-auto max-h-[14rem] sm:max-h-[18rem] pb-2"
           }
           loading="lazy"
-        />
-        {/* <img
+        /> */}
+        <img
           src="/nc-newz.jpg"
           alt="NC Newz"
           className={
@@ -113,7 +113,7 @@ const Projects: React.FC<ProjectsProp> = ({ project }) => {
               : "hidden"
           }
           loading="lazy"
-        /> */}
+        />
 
         <p className="text-darkest text-left px-3 text-[80%] sm:text-[90%] lg:text-[100%]">
           {currentProject.description}
